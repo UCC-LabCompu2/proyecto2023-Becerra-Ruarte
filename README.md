@@ -25,7 +25,7 @@ Link: [Proyecto-Becerra-Ruarte](https://ucc-labcompu2.github.io/proyecto2023-Bec
 ### Sobre el Proyecto General
 - [X] La página principal debe llamarse index
 - [X] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
-- [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [X] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [X] Se debe emplear algún favicon
 - [X] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
 - [X] Debe haber navegación entre todas las páginas
