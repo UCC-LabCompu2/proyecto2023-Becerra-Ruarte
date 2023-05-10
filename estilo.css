@@ -11,15 +11,16 @@ header{
     justify-content: center;
 }
 header img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
 }
 body{
-    background: url(imagenes/fondo.jpg) no-repeat center center fixed;
+    background: url(imagenes/fondo1.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
     font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
 
 }
 a{
@@ -57,5 +58,13 @@ select{
     bottom: 0;
     left: 0;
     text-align: left;
+}
+.conceptos{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.ingresodedatos{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
