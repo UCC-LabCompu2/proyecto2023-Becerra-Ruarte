@@ -67,4 +67,9 @@ select{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
+.resultado{
+    display: block;
+    text-align: center;
+    align-items: center;
+}
 

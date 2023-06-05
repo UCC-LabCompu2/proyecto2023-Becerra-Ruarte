@@ -13,26 +13,36 @@
 
 </head>
 <body>
-<div class="ingresodedatos">
-<p class="ingresodemasa" >
-  <label for="masa">Ingrese la masa del objeto en kilogramos:</label>
-  <input type="number" id="masa" name="masa">
-</p>
-<p class="opciones" >
+<main>
+  <div class="ingresodedatos">
+    <p class="ingresodemasa" >
+      <label for="masa">Ingrese la masa del objeto en kilogramos:</label>
+      <input type="number" id="masa" name="masa">
+    </p>
+    <p class="opciones" >
 
-  <label for="gravedad">Elija la superficie deseada:</label>
-  <select id="gravedad">
-    <option value="tierra">Tierra</option>
-    <option value="marte">Marte</option>
-    <option value="luna">Luna</option>
-    <option value="mercurio">Mercurio</option>
-    <option value="jupiter">Jupiter</option>
-    <option value="saturno">Saturno</option>
-    <option value="neptuno">Neptuno</option>
-  </select>
-</p>
-</div>
-<a id="botoninicio" href="index.html"><button>INICIO</button></a>
-<canvas></canvas>
+      <label for="gravedad">Elija la superficie deseada:</label>
+      <select id="gravedad">
+        <option value="tierra">Tierra</option>
+        <option value="marte">Marte</option>
+        <option value="luna">Luna</option>
+        <option value="mercurio">Mercurio</option>
+        <option value="jupiter">Jupiter</option>
+        <option value="saturno">Saturno</option>
+        <option value="neptuno">Neptuno</option>
+      </select>
+    </p>
+  </div>
+  <br>
+  <div class="resultado">
+    <label for="peso">Peso=</label>
+    <input type="text" id="peso" name="peso" readonly>
+  </div>
+  <canvas>
+  </canvas>
+</main>
+<footer>
+  <a id="botoninicio" href="index.html"><button>INICIO</button></a>
+</footer>
 </body>
 </html>
