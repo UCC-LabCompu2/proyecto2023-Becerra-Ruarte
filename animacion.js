@@ -1,3 +1,7 @@
+/**
+ * Dibuja el planeta seleccionado en el canvas.
+ * @method dibujar
+ */
 function dibujar() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");

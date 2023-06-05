@@ -1,9 +1,9 @@
 /**
- * Calcula el peso en un planeta específico.
- * @method calcularPeso
- * @return {number} El peso del objeto en el planeta especificado.
+ * Verifica que la masa sea valida.
+ * @method validarDatos.
+ * @param {number} masa - la masa introducida por el usuario.
+ * @return {boolean} true si la masa es valida, false si no lo es,
  */
-
 function validarDatos(masa) {
     if (isNaN(masa)) {
         alert("Por favor, ingrese una masa válida en kilogramos.");
@@ -16,6 +16,11 @@ function validarDatos(masa) {
     return true;
 }
 
+/**
+ * Calcula el peso en un planeta específico.
+ * @method calcularPeso
+ * @return {number} El peso del objeto en el planeta especificado.
+ */
 function calcularPeso() {
     // Obtener referencia a los elementos HTML
     let masaInput = document.getElementById('masa');
@@ -28,7 +33,7 @@ function calcularPeso() {
     if (!validarDatos(masa)) {
         masaInput.value = '';
         pesoInput.value = '';
-        return;
+        return 0;
     }
 
     // Obtener referencia al select de gravedad
