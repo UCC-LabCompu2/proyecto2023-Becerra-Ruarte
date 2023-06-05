@@ -12,7 +12,7 @@ function dibujar(){
         ctx.drawImage(img, 0, 35, ancho, alto);
     }
 }
-
+/*
 x=0;
 dx=4;
 function mover() {
@@ -36,4 +36,4 @@ function mover() {
     }
 
     x += dx;
-}
+}*/
