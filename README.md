@@ -4,7 +4,7 @@ Esta pagina calcula los diferentes pesos de una masa, teniendo en cuenta distint
 ## Autores
 * Becerra, Martina y Ruarte, Jose.
 
-## Tecnologias usadas
+## Tecnologías usadas
 * HTML5
 * CSS3
 * JAVASCRIPT
