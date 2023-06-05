@@ -1,5 +1,5 @@
 # Calculadora de Peso 
-Esta pagina calcula los diferentes pesos de una masa, teniendo en cuenta distintas gravedades.
+Esta página calcula los diferentes pesos de una masa, teniendo en cuenta distintas gravedades.
 
 ## Autores
 * Becerra, Martina y Ruarte, Jose.
