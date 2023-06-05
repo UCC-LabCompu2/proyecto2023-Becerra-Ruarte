@@ -1,33 +1,44 @@
-function calcularPeso() {
-    // Obtener referencia a los elementos HTML
-    var masaInput = document.getElementById('masa');
-    var pesoInput = document.getElementById('peso');
+/**
+ * Calcula el peso en un planeta específico.
+ * @method calcularPeso
+ * @return {number} El peso del objeto en el planeta especificado.
+ */
 
-    // Obtener el valor de la masa ingresada y convertirlo a un número
-    var masa = parseFloat(masaInput.value);
-
-    // Validar que se haya ingresado una masa válida
+function validarDatos(masa) {
     if (isNaN(masa)) {
         alert("Por favor, ingrese una masa válida en kilogramos.");
-        masaInput.value = '';
-        pesoInput.value = '';
-        return;
+        return false;
     }
     if (masa < 0) {
         alert("La masa no puede ser un número negativo.");
+        return false;
+    }
+    return true;
+}
+
+function calcularPeso() {
+    // Obtener referencia a los elementos HTML
+    let masaInput = document.getElementById('masa');
+    let pesoInput = document.getElementById('peso');
+
+    // Obtener el valor de la masa ingresada y convertirlo a un número
+    let masa = parseFloat(masaInput.value);
+
+    // Validar que se haya ingresado una masa válida
+    if (!validarDatos(masa)) {
         masaInput.value = '';
         pesoInput.value = '';
         return;
     }
 
     // Obtener referencia al select de gravedad
-    var gravedadSelect = document.getElementById('gravedad');
+    let gravedadSelect = document.getElementById('gravedad');
 
     // Obtener el valor del planeta seleccionado en el select
-    var planeta = gravedadSelect.value;
+    let planeta = gravedadSelect.value;
 
     // Variable para almacenar el valor de la gravedad según el planeta seleccionado
-    var gravedad;
+    let gravedad;
 
     // Asignar la gravedad correspondiente según el planeta seleccionado
     switch (planeta) {
@@ -57,7 +68,7 @@ function calcularPeso() {
     }
 
     // Calcular el peso multiplicando la masa por la gravedad correspondiente
-    var peso = masa * gravedad;
+    let peso = masa * gravedad;
 
     // Mostrar el peso en el elemento de input readonly
     pesoInput.value = peso.toFixed(2);

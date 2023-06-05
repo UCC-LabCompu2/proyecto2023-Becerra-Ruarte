@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="funcionpeso.js"></script>
+  <script src="animacion.js"></script>
 
 </head>
 <body>
@@ -34,16 +35,20 @@
       </select>
     </p>
     <p>
-      <a><button onclick="calcularPeso()">Calcular</button></a>
+      <a><button onclick="calcularPeso(); dibujar(); setInterval(mover, 30)">Calcular</button></a>
     </p>
   </div>
   <br>
   <div class="resultado">
     <label for="peso">Peso=</label>
     <input type="number" id="peso" name="peso" readonly class="peso.input">
+    N
   </div>
-  <canvas>
-  </canvas>
+  <div>
+    <br>
+    <canvas id="myCanvas" width="1500px" height="200px"></canvas>
+  </div>
+
 </main>
 <footer>
   <a id="botoninicio" href="index.html"><button>INICIO</button></a>
