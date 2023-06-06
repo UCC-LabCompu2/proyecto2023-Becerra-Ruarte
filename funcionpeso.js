@@ -39,7 +39,7 @@ function calcularPeso() {
     }
 
     dibujar();
-    setInterval(mover, 50);
+    setInterval(mover(), 50);
 
     // Obtener referencia al select de gravedad
     let gravedadSelect = document.getElementById('gravedad');

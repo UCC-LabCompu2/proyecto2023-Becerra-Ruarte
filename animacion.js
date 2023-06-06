@@ -79,6 +79,7 @@ function dibujar() {
             }
             break;
     }
+    mover();
 }
 
 /**
