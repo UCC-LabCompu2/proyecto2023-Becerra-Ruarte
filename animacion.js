@@ -81,8 +81,15 @@ function dibujar() {
     }
 }
 
-/*let x=0;
-const dx=4;
+/**
+ * Anima el planeta dibujado en el canvas.
+ * @method mover
+ */
+
+let x = 0;
+const dx = 4;
+let i = 0;
+
 function mover() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
@@ -163,7 +170,12 @@ function mover() {
 
     if (x > canvas.width) {
         x = 0;
+        i++;
+    }
+
+    if (i >= 2) {
+        return;
     }
 
     x += dx;
-}*/
+}

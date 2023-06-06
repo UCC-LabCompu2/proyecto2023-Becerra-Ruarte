@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora de Peso</title>
-  <meta content="Becerra-Ruarte" name="autor">
-  <meta content="Web Calculadora de Peso con diferentes gravedades" name="descripcion">
-  <meta content="peso, gravedad, espacio" name="palabras-principales">
-  <link rel="stylesheet" href="estilo.css" type="text/css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="funcionpeso.js"></script>
-  <script src="animacion.js"></script>
+    <meta charset="UTF-8">
+    <title>Calculadora de Peso</title>
+    <meta content="Becerra-Ruarte" name="autor">
+    <meta content="Web Calculadora de Peso con diferentes gravedades" name="descripcion">
+    <meta content="peso, gravedad, espacio" name="palabras-principales">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="funcionpeso.js"></script>
+    <script src="animacion.js"></script>
 
 </head>
 <body>
 <main>
-  <div class="ingresodedatos">
-    <p class="ingresodemasa" >
-      <label for="masa">Ingrese la masa del objeto en kilogramos:</label>
-      <input type="number" id="masa" name="masa" class="masa.input">
-    </p>
-    <p class="opciones" >
+    <div class="ingresodedatos">
+        <p class="ingresodemasa">
+            <label for="masa">Ingrese la masa del objeto en kilogramos:</label>
+            <input type="number" id="masa" name="masa" class="masa.input">
+        </p>
+        <p class="opciones">
 
-      <label for="gravedad">Elija la superficie deseada:</label>
-      <select id="gravedad">
-        <option value="tierra">Tierra</option>
-        <option value="marte">Marte</option>
-        <option value="luna">Luna</option>
-        <option value="mercurio">Mercurio</option>
-        <option value="jupiter">Jupiter</option>
-        <option value="saturno">Saturno</option>
-        <option value="neptuno">Neptuno</option>
-      </select>
-    </p>
-    <p>
-      <a><button onclick="calcularPeso(); dibujar()/*; setInterval(mover, 30)*/">Calcular</button></a>
-    </p>
-  </div>
-  <br>
-  <div class="resultado">
-    <label for="peso">Peso=</label>
-    <input type="number" id="peso" name="peso" readonly class="peso.input">
-    N
-  </div>
-  <div>
+            <label for="gravedad">Elija la superficie deseada:</label>
+            <select id="gravedad">
+                <option value="tierra">Tierra</option>
+                <option value="marte">Marte</option>
+                <option value="luna">Luna</option>
+                <option value="mercurio">Mercurio</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturno">Saturno</option>
+                <option value="neptuno">Neptuno</option>
+            </select>
+        </p>
+        <p>
+            <a>
+                <button onclick="calcularPeso()">Calcular</button>
+            </a>
+        </p>
+    </div>
     <br>
-    <canvas id="myCanvas" width="1500px" height="200px"></canvas>
-  </div>
+    <div class="resultado">
+        <label for="peso">Peso=</label>
+        <input type="number" id="peso" name="peso" readonly class="peso.input">
+        N
+    </div>
+    <div>
+        <br>
+        <canvas id="myCanvas" width="1500px" height="200px"></canvas>
+    </div>
 
 </main>
 <footer>
-  <a id="botoninicio" href="index.html"><button>INICIO</button></a>
+    <a id="botoninicio" href="index.html">
+        <button>INICIO</button>
+    </a>
 </footer>
 </body>
 </html>

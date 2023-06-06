@@ -1,21 +1,24 @@
-h1{
+h1 {
     color: #ffffff;
     text-align: center;
     font-size: 70px;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header img{
+
+header img {
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
-body{
+
+body {
     background: url(imagenes/fondo1.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
@@ -23,62 +26,75 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 
 }
-a{
+
+a {
     display: block;
     color: #ffffff;
     text-align: center;
     font-size: 2em;
 }
-button{
+
+button {
     font-size: 28px;
     background-color: #000000;
     color: #ffffff;
 }
+
 button:hover {
     background-color: #ff0000;
 }
-#Formula{
+
+#Formula {
     text-align: center;
 }
-select{
+
+select {
     font-size: 20px;
 }
-.ingresodemasa{
+
+.ingresodemasa {
     display: block;
     text-align: center;
     align-items: center;
 }
-.opciones{
+
+.opciones {
     display: block;
     text-align: center;
     align-items: center;
 }
-#botoninicio{
+
+#botoninicio {
     position: fixed;
     bottom: 0;
     left: 0;
     text-align: left;
 }
-.conceptos{
+
+.conceptos {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
-.ingresodedatos{
+
+.ingresodedatos {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
-.resultado{
+
+.resultado {
     display: block;
     text-align: center;
     align-items: center;
 }
-.peso\.input{
+
+.peso\.input {
     font-size: 30px;
     width: 105px;
     background-color: transparent;
     color: #ffffff;
 }
-.masa\.input{
+
+.masa\.input {
     width: 80px;
     font-size: 20px;
 }

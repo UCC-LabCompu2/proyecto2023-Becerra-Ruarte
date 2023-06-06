@@ -18,7 +18,9 @@ function validarDatos(masa) {
 
 /**
  * Calcula el peso en un planeta específico.
- * @method calcularPeso
+ * @method calcularPeso.
+ * @param {number} masa - La masa introducida por el usuario.
+ * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  * @return {number} El peso del objeto en el planeta especificado.
  */
 function calcularPeso() {
@@ -35,6 +37,9 @@ function calcularPeso() {
         pesoInput.value = '';
         return 0;
     }
+
+    dibujar();
+    setInterval(mover, 48);
 
     // Obtener referencia al select de gravedad
     let gravedadSelect = document.getElementById('gravedad');
