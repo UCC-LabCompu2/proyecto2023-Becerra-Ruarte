@@ -79,7 +79,7 @@ function dibujar() {
             }
             break;
     }
-    mover();
+    setInterval(mover, 50);
 }
 
 /**
