@@ -1,6 +1,7 @@
 /**
  * Dibuja el planeta seleccionado en el canvas.
  * @method dibujar
+ * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  */
 function dibujar() {
     const canvas = document.getElementById("myCanvas");
@@ -85,6 +86,7 @@ function dibujar() {
 /**
  * Anima el planeta dibujado en el canvas.
  * @method mover
+ * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  */
 
 let x = 0;
