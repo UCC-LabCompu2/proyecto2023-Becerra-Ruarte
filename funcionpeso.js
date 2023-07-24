@@ -1,12 +1,28 @@
+
+/**
+ * Blanquea el canvas y el campo de peso.
+ * @method blanquearCanvasYPeso
+ */
+function blanquearCanvasYPeso() {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = canvas.width; // Limpiar el canvas
+    document.getElementById('peso').value = ''; // Establecer el valor del campo de peso en vacío
+
+    // Reiniciar valores de la animación
+    x = 0;
+    i = 0;
+}
+
 /**
  * Verifica que la masa sea valida.
  * @method validarDatos.
- * @param {number} masa - la masa introducida por el usuario.
  * @return {boolean} true si la masa es valida, false si no lo es,
  */
 function validarDatos(masa) {
     if (isNaN(masa)) {
         alert("Por favor, ingrese una masa válida en kilogramos.");
+        calcularButton.disabled = false;
         return false;
     }
     if (masa < 0) {
@@ -15,15 +31,17 @@ function validarDatos(masa) {
     }
     return true;
 }
-
-/**
+        /**
  * Calcula el peso en un planeta específico.
  * @method calcularPeso.
- * @param {number} masa - La masa introducida por el usuario.
- * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  * @return {number} El peso del objeto en el planeta especificado.
  */
 function calcularPeso() {
+
+    // Deshabilitar el botón "Calcular" durante el proceso de cálculo
+    const calcularButton = document.querySelector("button");
+
+    blanquearCanvasYPeso();
     // Obtener referencia a los elementos HTML
     let masaInput = document.getElementById('masa');
     let pesoInput = document.getElementById('peso');
@@ -35,6 +53,10 @@ function calcularPeso() {
     if (!validarDatos(masa)) {
         masaInput.value = '';
         pesoInput.value = '';
+
+        // Habilitar el botón "Calcular" solo si los datos no son válidos
+        calcularButton.disabled = false;
+
         return 0;
     }
 
@@ -81,4 +103,6 @@ function calcularPeso() {
 
     // Mostrar el peso en el elemento de input readonly
     pesoInput.value = peso.toFixed(2);
+
+    calcularButton.disabled = true;
 }

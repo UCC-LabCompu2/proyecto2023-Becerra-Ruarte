@@ -1,7 +1,7 @@
+
 /**
  * Dibuja el planeta seleccionado en el canvas.
  * @method dibujar
- * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  */
 function dibujar() {
     const canvas = document.getElementById("myCanvas");
@@ -81,12 +81,13 @@ function dibujar() {
             break;
     }
     setInterval(mover, 50);
+
+
 }
 
 /**
  * Anima el planeta dibujado en el canvas.
  * @method mover
- * @param {string} planeta - El nombre del planeta seleccionado por el usuario.
  */
 
 let x = 0;
@@ -96,8 +97,6 @@ let i = 0;
 function mover() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
-
-    canvas.width = canvas.width;
 
     let img = new Image();
 
@@ -112,6 +111,7 @@ function mover() {
                 const escala = 0.6;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -121,6 +121,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -130,6 +131,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -139,6 +141,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -148,6 +151,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -157,6 +161,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;
@@ -166,6 +171,7 @@ function mover() {
                 const escala = 0.3;
                 let ancho = img.width * escala;
                 let alto = img.height * escala;
+                canvas.width = canvas.width;
                 ctx.drawImage(img, x, 35, ancho, alto);
             }
             break;

@@ -39,6 +39,11 @@
                 <button onclick="calcularPeso()">Calcular</button>
             </a>
         </p>
+        <p>
+            <a>
+                <button onclick="reiniciarPagina()">Reiniciar</button>
+            </a>
+        </p>
     </div>
     <br>
     <div class="resultado">
@@ -57,5 +62,22 @@
         <button>INICIO</button>
     </a>
 </footer>
+
+<script src="funcionpeso.js"></script>
+<script src="animacion.js"></script>
+
+<script>
+    // Obtener referencias a los elementos del DOM
+    const masaInput = document.getElementById("masa");
+    const gravedadSelect = document.getElementById("gravedad");
+
+    // Blanquear el canvas y el campo de peso cuando se modifiquen los valores
+    masaInput.addEventListener("change", blanquearCanvasYPeso);
+    gravedadSelect.addEventListener("change", blanquearCanvasYPeso);
+
+    function reiniciarPagina() {
+        window.location.reload();
+    }
+</script>
 </body>
 </html>
