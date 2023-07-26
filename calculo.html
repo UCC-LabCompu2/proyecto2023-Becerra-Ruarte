@@ -19,12 +19,11 @@
     <div class="ingresodedatos">
         <p class="ingresodemasa">
             <label for="masa">Ingrese la masa del objeto en kilogramos:</label>
-            <input type="number" id="masa" name="masa" class="masa.input">
+            <input type="number" id="masa" name="masa" class="masa.input" onchange="blanquearCanvasYPeso()">
         </p>
         <p class="opciones">
-
             <label for="gravedad">Elija la superficie deseada:</label>
-            <select id="gravedad">
+            <select id="gravedad" onchange="blanquearCanvasYPeso()">
                 <option value="tierra">Tierra</option>
                 <option value="marte">Marte</option>
                 <option value="luna">Luna</option>
@@ -49,7 +48,6 @@
     <div class="resultado">
         <label for="peso">Peso=</label>
         <input type="number" id="peso" name="peso" readonly class="peso.input">
-        N
     </div>
     <div>
         <br>
@@ -63,21 +61,5 @@
     </a>
 </footer>
 
-<script src="funcionpeso.js"></script>
-<script src="animacion.js"></script>
-
-<script>
-    // Obtener referencias a los elementos del DOM
-    const masaInput = document.getElementById("masa");
-    const gravedadSelect = document.getElementById("gravedad");
-
-    // Blanquear el canvas y el campo de peso cuando se modifiquen los valores
-    masaInput.addEventListener("change", blanquearCanvasYPeso);
-    gravedadSelect.addEventListener("change", blanquearCanvasYPeso);
-
-    function reiniciarPagina() {
-        window.location.reload();
-    }
-</script>
 </body>
 </html>

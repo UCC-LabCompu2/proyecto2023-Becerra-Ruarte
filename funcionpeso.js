@@ -8,10 +8,6 @@ function blanquearCanvasYPeso() {
     const ctx = canvas.getContext("2d");
     canvas.width = canvas.width; // Limpiar el canvas
     document.getElementById('peso').value = ''; // Establecer el valor del campo de peso en vacío
-
-    // Reiniciar valores de la animación
-    x = 0;
-    i = 0;
 }
 
 /**
@@ -41,7 +37,6 @@ function calcularPeso() {
     // Deshabilitar el botón "Calcular" durante el proceso de cálculo
     const calcularButton = document.querySelector("button");
 
-    blanquearCanvasYPeso();
     // Obtener referencia a los elementos HTML
     let masaInput = document.getElementById('masa');
     let pesoInput = document.getElementById('peso');
@@ -105,4 +100,8 @@ function calcularPeso() {
     pesoInput.value = peso.toFixed(2);
 
     calcularButton.disabled = true;
+}
+
+function reiniciarPagina() {
+    window.location.reload();
 }
